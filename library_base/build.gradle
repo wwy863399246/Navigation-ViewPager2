@@ -1,0 +1,58 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 26
+        targetSdk 33
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    viewBinding {
+        enabled = true
+    }
+    dataBinding {
+        enabled = true
+    }
+    namespace 'cn.wwy.android'
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    api "androidx.datastore:datastore-preferences:1.0.0"
+    api 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    api 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    // 协程库(版本可自定)
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1'
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1'
+    // OkHttp(版本可自定, 要求OkHttp4以上版本)
+    api 'com.squareup.okhttp3:okhttp:4.11.0'
+    api "com.squareup.okhttp3:logging-interceptor:4.11.0"
+    api 'com.github.li-xiaojun:XPopup:2.9.19'//弹窗
+    //权限
+    api 'com.github.getActivity:XXPermissions:18.0'
+    //TabLayout
+    api 'com.github.angcyo.DslTablayout:TabLayout:3.4.2'
+    api 'com.github.angcyo.DslTablayout:ViewPager2Delegate:3.4.2'
+    api 'com.github.DylanCaiCoding.Longan:longan:1.1.1'
+}

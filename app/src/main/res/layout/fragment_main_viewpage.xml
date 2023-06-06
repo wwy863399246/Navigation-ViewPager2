@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/main_view_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/main_tab_layout" />
+
+        <LinearLayout
+            android:id="@+id/main_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="?attr/colorOnPrimary"
+                android:backgroundTint="@color/color_on_surface_12" />
+
+            <com.angcyo.tablayout.DslTabLayout
+                android:id="@+id/dsl_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/app_dialog_color"
+                app:tab_item_is_equ_width="true">
+
+                <LinearLayout
+                    android:id="@+id/ll_home"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/main_tv_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/baseline_home_24"
+                        android:gravity="center"
+                        android:text="@string/home"
+                        android:textColor="@color/bottom_navigation_view_selector_color"
+                        android:textSize="12sp"
+                        app:drawableTint="@color/app_primary_color" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_course"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/main_tv_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/baseline_view_quilt_24"
+                        android:gravity="center"
+                        android:text="@string/course"
+                        android:textColor="@color/bottom_navigation_view_selector_color"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_mine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/main_tv_mine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/baseline_engineering_24"
+                        android:gravity="center"
+                        android:text="@string/mine"
+                        android:textColor="@color/bottom_navigation_view_selector_color"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </com.angcyo.tablayout.DslTabLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

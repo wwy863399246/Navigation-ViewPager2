@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">FFFFFF</color>
+    <color name="dialog_bg">#FFFFFFFF</color>
+    <color name="app_primary_color">#2BC48A</color>//主题色
+    <color name="primary_text">#DE000000</color>//主文本
+    <color name="secondary_text">#8A000000</color>//辅助文本
+    <color name="hint_text">#61000000</color>//禁用状态的文本、提示文本
+</resources>

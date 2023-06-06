@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="dialog_bg">#2D2D2D</color>
+    <color name="primary_text">#FFFFFF</color>//主文本
+    <color name="secondary_text">#B3FFFFFF</color>//辅助文本
+    <color name="hint_text">#80FFFFFF</color>//禁用状态的文本、提示文本
+</resources>

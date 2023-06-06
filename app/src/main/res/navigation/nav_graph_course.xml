@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_course"
+    app:startDestination="@id/courseFragment">
+
+    <fragment
+        android:id="@+id/course_dest"
+        android:name="com.example.myapplication.ui.navhost.CourseNavHostFragment"
+        android:label="CourseHost"
+        tools:layout="@layout/fragment_nav_host_course" />
+
+    <fragment
+        android:id="@+id/courseFragment"
+        android:name="com.example.myapplication.ui.CourseFragment"
+        android:label="@string/course"
+        tools:layout="@layout/fragment_course">
+        <action
+            android:id="@+id/action_memberFragment"
+            app:destination="@id/nav_graph_member" />
+    </fragment>
+
+    <include app:graph="@navigation/nav_graph_member" />
+
+
+</navigation>

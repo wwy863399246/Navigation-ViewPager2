@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.TextAppearance.AppCompat" parent="">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--====================== primary_text 主文本 wrap_wrap=====================-->
+    <!--  primary_text  wrap_wrap -->
+    <style name="primary_text_color" parent="wrap_wrap">
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <!--  text_color_333333_20 20sp wrap_wrap -->
+    <style name="primary_text_color_20" parent="primary_text_color">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--  text_color_333333_18 18sp wrap_wrap -->
+    <style name="primary_text_color_18" parent="primary_text_color">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--  text_color_333333_16 16sp wrap_wrap -->
+    <style name="primary_text_color_16" parent="primary_text_color">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--  text_color_333333_14 14sp wrap_wrap -->
+    <style name="primary_text_color_14" parent="primary_text_color">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--  text_color_333333_12 12sp wrap_wrap -->
+    <style name="primary_text_color_12" parent="primary_text_color">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <!--====================== secondary_text 辅助文本 =====================-->
+    <!--  secondary_text  wrap_wrap -->
+    <style name="secondary_text_color" parent="wrap_wrap">
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+    <!--  secondary_text_color_16 16sp wrap_wrap -->
+    <style name="secondary_text_color_16" parent="secondary_text_color">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--  secondary_text_color_14 14sp wrap_wrap -->
+    <style name="secondary_text_color_14" parent="secondary_text_color">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--  secondary_text_color_12 12sp wrap_wrap -->
+    <style name="secondary_text_color_12" parent="secondary_text_color">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!--  secondary_text_color_10 10sp wrap_wrap -->
+    <style name="secondary_text_color_10" parent="secondary_text_color">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!--====================== hint_text_color 禁用状态的文本、提示文本 =====================-->
+    <!--  text_color_primary_alpha_50  wrap_wrap -->
+    <style name="hint_text_color" parent="wrap_wrap">
+        <item name="android:textColor">@color/hint_text</item>
+    </style>
+    <!--  hint_text_color_16 16sp wrap_wrap -->
+    <style name="hint_text_color_16" parent="hint_text_color">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--  hint_text_color_14 14sp wrap_wrap -->
+    <style name="hint_text_color_14" parent="hint_text_color">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--  hint_text_color_12 12sp wrap_wrap -->
+    <style name="hint_text_color_12" parent="hint_text_color">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!--  hint_text_color_10 10sp wrap_wrap -->
+    <style name="hint_text_color_10" parent="hint_text_color">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <!--====================== text_primary_color =====================-->
+    <!--  text_primary_color  wrap_wrap -->
+    <style name="text_primary_color" parent="wrap_wrap">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--  text_primary_color 18sp wrap_wrap -->
+    <style name="text_primary_color_18" parent="text_primary_color">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--  text_primary_color 16sp wrap_wrap -->
+    <style name="text_primary_color_16" parent="text_primary_color">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--  text_primary_color 14sp wrap_wrap -->
+    <style name="text_primary_color_14" parent="text_primary_color">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--  text_primary_color 12sp wrap_wrap -->
+    <style name="text_primary_color_12" parent="text_primary_color">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- text_primary_color 10sp wrap_wrap -->
+    <style name="text_primary_color_10" parent="text_primary_color">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!--====================== FFFFFF =====================-->
+    <!--  text_color_FFFFFF  wrap_wrap -->
+    <style name="text_color_FFFFFF" parent="wrap_wrap">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--  text_color_FFFFFF_18 18sp wrap_wrap -->
+    <style name="text_color_FFFFFF_18" parent="text_color_FFFFFF">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--  text_color_FFFFFF_16 16sp wrap_wrap -->
+    <style name="text_color_FFFFFF_16" parent="text_color_FFFFFF">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--  text_color_FFFFFF_14 14sp wrap_wrap -->
+    <style name="text_color_FFFFFF_14" parent="text_color_FFFFFF">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--  text_color_FFFFFF_12 12sp wrap_wrap -->
+    <style name="text_color_FFFFFF_12" parent="text_color_FFFFFF">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!--  text_color_FFFFFF_10 10sp wrap_wrap -->
+    <style name="text_color_FFFFFF_10" parent="text_color_FFFFFF">
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

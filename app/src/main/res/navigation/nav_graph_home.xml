@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/home_dest"
+        android:name="com.example.myapplication.ui.navhost.HomeNavHostFragment"
+        android:label="HomeHost"
+        tools:layout="@layout/fragment_nav_host_home" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myapplication.ui.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_themeFragment"
+            app:destination="@id/themeFragment"
+            app:enterAnim="@anim/login_slide_in_right"
+            app:exitAnim="@anim/login_slide_out_left"
+            app:popEnterAnim="@anim/login_slide_in_left"
+            app:popExitAnim="@anim/login_slide_out_right" />
+    </fragment>
+
+    <activity
+        android:id="@+id/themeFragment"
+        android:name="com.example.myapplication.ui.ThemeFragment"
+        android:label="@string/home_theme"
+        tools:layout="@layout/fragment_theme" />
+
+</navigation>
